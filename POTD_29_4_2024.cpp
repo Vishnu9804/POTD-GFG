@@ -1,3 +1,4 @@
+// POTD geeksforgeeks 29/04/2024
 // Delete every Kth Node of Linked List
 
 #include <cstddef>
