@@ -1,4 +1,4 @@
-// Delete every Kth Node of linked list
+// Delete every Kth Node of Linked List
 
 #include <cstddef>
 #include <stdio.h>
