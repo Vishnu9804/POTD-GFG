@@ -45,7 +45,6 @@ public:
             }
             return nullptr;
         }
-
         if (K <= 0 || head == nullptr)
             return head;
 
@@ -79,7 +78,6 @@ public:
                 counter++;
             }
         }
-
         return head;
     }
 };
