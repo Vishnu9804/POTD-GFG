@@ -42,3 +42,72 @@ void printList(Node *n)
     }
     cout << endl;
 }
+
+class Solution
+{
+public:
+    Node *reverse(Node *head)
+    {
+        Node *prev = NULL;
+        Node *current = head;
+        Node *next;
+
+        while (current != NULL)
+        {
+            next = current->next;
+            current->next = prev;
+            prev = current;
+            current = next;
+        }
+
+        return prev;
+    }
+
+public:
+   
+    struct Node *addTwoLists(struct Node *num1, struct Node *num2)
+    {
+
+        num1 = reverse(num1);
+        num2 = reverse(num2);
+
+        Node *res = NULL;
+        int carry = 0;
+
+        while (num1 != NULL || num2 != NULL || carry != 0)
+        {
+
+            int rem = carry;
+
+            if (num1)
+                rem += num1->data;
+            if (num2)
+                rem += num2->data;
+
+            carry = rem / 10;
+
+            rem = rem % 10;
+
+            Node *newNode = new Node(rem);
+
+            newNode->next = res;
+
+            res = newNode;
+
+            if (num1)
+                num1 = num1->next;
+            if (num2)
+                num2 = num2->next;
+        }
+        while (res != NULL && res->data == 0)
+        {
+            Node *temp = res->next;
+            res->next = NULL;
+            delete (res);
+            res = temp;
+        }
+        if (res == NULL)
+            return new Node(0);
+        return res;
+    }
+};
