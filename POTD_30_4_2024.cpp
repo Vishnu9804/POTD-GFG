@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 30/04/2024
+// Add Two Linked List
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -64,7 +67,6 @@ public:
     }
 
 public:
-   
     struct Node *addTwoLists(struct Node *num1, struct Node *num2)
     {
 
