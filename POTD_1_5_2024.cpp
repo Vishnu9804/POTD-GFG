@@ -1,6 +1,4 @@
-#include <iostream>
-#include <vector>
-#include <algorithm>
+#include <bits/stdc++.h>
 #include <stack>
 using namespace std;
 
@@ -80,7 +78,6 @@ public:
         n->next = head;
         head = n;
     }
-
     struct Node *arrangeCV(Node *head)
     {
         Node *temp = head;
