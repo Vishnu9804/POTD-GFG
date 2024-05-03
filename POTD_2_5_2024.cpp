@@ -85,3 +85,49 @@ Node *buildTree(string str)
     return root;
 }
 
+class Solution
+{
+public:
+    void serializeToVector(Node *root, vector<int> &a)
+    {
+        if (root == NULL)
+        {
+            a.push_back(-1);
+            return;
+        }
+        a.push_back(root->data);
+
+        serializeToVector(root->left, a);
+        serializeToVector(root->right, a);
+    }
+
+    vector<int> serialize(Node *root)
+    {
+        vector<int> serial;
+        serializeToVector(root, serial);
+
+        return serial;
+    }
+
+    Node *buildTreeFromVector(vector<int> &a, int *index)
+    {
+        if (*index == a.size() or a[*index] == -1)
+        {
+            *index += 1;
+            return NULL;
+        }
+
+        Node *root = new Node(a[*index]);
+        *index += 1;
+
+        root->left = buildTreeFromVector(a, index);
+        root->right = buildTreeFromVector(a, index);
+        return root;
+    }
+
+    Node *deSerialize(vector<int> &a)
+    {
+        int index = 0;
+        return buildTreeFromVector(a, &index);
+    }
+};
