@@ -1,4 +1,7 @@
-#include <bits/stdc++.h>
+#include <cstddef>
+#include <stdio.h>
+#include <stdlib.h>
+#include <iostream>
 using namespace std;
 
 struct Node
@@ -80,3 +83,35 @@ Node* buildTree(string str)
     
     return root;
 }
+
+class Solution
+{
+public:
+    void postOrder(Node *root, vector<int> &result, int k)
+    {
+        if (root == NULL)
+        {
+            return;
+        }
+        else
+        {
+            if (k == 0)
+            {
+                result.push_back(root->data);
+                return;
+            }
+            else
+            {
+                postOrder(root->left, result, k - 1);
+                postOrder(root->right, result, k - 1);
+            }
+        }
+    }
+
+    vector<int> Kdistance(struct Node *root, int k)
+    {
+        vector<int> result;
+        postOrder(root, result, k);
+        return result;
+    }
+};
