@@ -1,12 +1,4 @@
-#include <iostream>
-#include <stdio.h>
-#include <stdlib.h>
-#include <vector>
-#include <algorithm>
-#include <string>
-#include <sstream>
-#include <queue>
-#include <map>
+#include <bits/stdc++.h>
 using namespace std;
 using namespace std;
 struct Node
