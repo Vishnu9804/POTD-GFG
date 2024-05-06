@@ -91,3 +91,39 @@ Node *buildTree(string str)
 
     return root;
 }
+class Solution
+{
+public:
+    vector<int> verticalSum(Node *root)
+    {
+        vector<int> result;
+
+        if (root == nullptr)
+            return result;
+
+        map<int, int> sums;
+        queue<pair<Node *, int>> queue;
+        queue.push({root, 0});
+
+        while (!queue.empty())
+        {
+            auto curr = queue.front();
+            queue.pop();
+            Node *node = curr.first;
+            int distance = curr.second;
+
+            sums[distance] += node->data;
+
+            if (node->left != nullptr)
+                queue.push({node->left, distance - 1});
+
+            if (node->right != nullptr)
+                queue.push({node->right, distance + 1});
+        }
+
+        for (const auto &sum : sums)
+            result.push_back(sum.second);
+
+        return result;
+    }
+};
