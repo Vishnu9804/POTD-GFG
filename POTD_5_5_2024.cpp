@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 05/05/2024
+// Vertical sum in binary tree
+
 #include <bits/stdc++.h>
 using namespace std;
 using namespace std;
