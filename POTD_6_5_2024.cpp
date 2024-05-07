@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 06/05/2024
+// Print all nodes that don't have sibling
+
 #include <iostream>
 #include <stdio.h>
 #include <stdlib.h>
