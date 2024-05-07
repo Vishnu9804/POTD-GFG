@@ -110,3 +110,28 @@ int main()
     }
     return 1;
 }
+
+void Levelorder(Node *p, vector<int> &a)
+{
+    if (p == NULL)
+        return;
+    queue<Node *> Q;
+    Q.push(p);
+    while (!Q.empty()) // Change here
+    {
+        a.push_back(Q.front()->data);
+        if (Q.front()->right != NULL)
+            Q.push(Q.front()->right);
+        if (Q.front()->left != NULL)
+            Q.push(Q.front()->left);
+        Q.pop();
+    }
+}
+
+vector<int> reverseLevelOrder(Node *root)
+{
+    vector<int> a;
+    Levelorder(root, a);
+    reverse(a.begin(), a.end());
+    return a;
+}
