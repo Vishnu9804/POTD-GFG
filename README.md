@@ -1,1 +1,1 @@
-# POTD-GFG
+# POTD-GeeksForGeeks
