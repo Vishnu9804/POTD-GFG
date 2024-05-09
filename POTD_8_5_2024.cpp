@@ -1,4 +1,12 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <stdio.h>
+#include <stdlib.h>
+#include <vector>
+#include <algorithm>
+#include <string>
+#include <sstream>
+#include <queue>
+#include <map>
 using namespace std;
 struct Node
 {
@@ -122,5 +130,37 @@ public:
             }
             cout << endl;
         }
+    }
+};
+
+class Solution
+{
+public:
+    void printPathsUtil(Node *node, vector<int> &path, vector<vector<int>> &paths)
+    {
+        if (node == NULL)
+            return;
+
+        path.push_back(node->data);
+
+        if (node->left == NULL && node->right == NULL)
+        {
+            paths.push_back(path);
+        }
+        else
+        {
+            printPathsUtil(node->left, path, paths);
+            printPathsUtil(node->right, path, paths);
+        }
+
+        path.pop_back();
+    }
+
+    vector<vector<int>> Paths(Node *root)
+    {
+        vector<vector<int>> paths;
+        vector<int> path;
+        printPathsUtil(root, path, paths);
+        return paths;
     }
 };
