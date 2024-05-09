@@ -1,6 +1,3 @@
-// POTD geeksforgeeks 09/05/2024
-// Devisor Game
-
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -13,3 +10,24 @@ public:
         return n % 2 == 0;
     }
 };
+
+//{ Driver Code Starts.
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int n;
+        cin >> n;
+
+        Solution obj;
+        bool ans = obj.divisorGame(n);
+        if (ans)
+            cout << "True" << endl;
+        else
+            cout << "False" << endl;
+    }
+    return 0;
+}
