@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 09/05/2024
+// Devisor Game
+
 #include <bits/stdc++.h>
 using namespace std;
 
