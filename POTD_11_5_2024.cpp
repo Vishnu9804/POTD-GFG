@@ -26,3 +26,21 @@ public:
         return output;
     }
 };
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        long long n;
+        cin >> n;
+
+        Solution ob;
+        vector<long long> ans = ob.jugglerSequence(n);
+        for (long long u : ans)
+            cout << u << " ";
+        cout << endl;
+    }
+    return 0;
+}
