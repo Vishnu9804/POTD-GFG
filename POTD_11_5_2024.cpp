@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 11/05/2024
+// Juggler Sequence
+
 #include <bits/stdc++.h>
 using namespace std;
 
