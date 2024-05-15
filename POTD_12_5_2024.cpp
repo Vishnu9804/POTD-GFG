@@ -15,3 +15,18 @@ public:
         return step;
     }
 };
+
+int main()
+{
+    int t;
+    cin >> t;
+    while (t--)
+    {
+        int d;
+        cin >> d;
+
+        Solution ob;
+        cout << ob.minSteps(d) << "\n";
+    }
+    return 0;
+}
