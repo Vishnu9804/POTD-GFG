@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 13/05/2024
+// Number of Good Components
+
 #include <bits/stdc++.h>
 using namespace std;
 
@@ -29,6 +32,8 @@ public:
         }
     }
 };
+
+// } Driver Code Ends
 
 class Solution
 {
