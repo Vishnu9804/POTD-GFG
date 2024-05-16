@@ -29,3 +29,47 @@ public:
         }
     }
 };
+
+class Solution
+{
+public:
+    void dfsTraversal(int vertex, int &numVertices, int &numEdges, const vector<vector<int>> &adjacencyList, vector<bool> &visited)
+    {
+        visited[vertex] = true;
+        numVertices++;
+        numEdges += adjacencyList[vertex].size();
+        for (int neighbor : adjacencyList[vertex])
+        {
+            if (!visited[neighbor])
+            {
+                dfsTraversal(neighbor, numVertices, numEdges, adjacencyList, visited);
+            }
+        }
+    }
+
+    int findNumberOfGoodComponent(int totalEdges, int totalVertices, vector<vector<int>> &graph)
+    {
+        vector<vector<int>> adjList(totalVertices + 1);
+        for (const auto &edge : graph)
+        {
+            adjList[edge[0]].push_back(edge[1]);
+            adjList[edge[1]].push_back(edge[0]);
+        }
+
+        int goodComponentCount = 0;
+        vector<bool> visited(totalVertices + 1, false);
+
+        for (int i = 1; i <= totalVertices; i++)
+        {
+            if (!visited[i])
+            {
+                int verticesCount = 0, edgesCount = 0;
+                dfsTraversal(i, verticesCount, edgesCount, adjList, visited);
+                edgesCount /= 2;
+                if (edgesCount == (verticesCount * (verticesCount - 1)) / 2)
+                    goodComponentCount++;
+            }
+        }
+        return goodComponentCount;
+    }
+};
