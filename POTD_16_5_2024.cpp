@@ -40,3 +40,25 @@ public:
         return removableEdges;
     }
 };
+
+int main()
+{
+    int tc;
+    cin >> tc;
+    while (tc--)
+    {
+        int n;
+        cin >> n;
+        vector<vector<int>> edges;
+        for (int i = 0; i < n - 1; i++)
+        {
+            int x, y;
+            cin >> x >> y;
+            edges.push_back({x, y});
+        }
+        Solution obj;
+        int ans = obj.minimumEdgeRemove(n, edges);
+        cout << ans << "\n";
+    }
+    return 0;
+}
