@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 16/05/2024
+// Divisibility tree
+
 #include <bits/stdc++.h>
 using namespace std;
 
