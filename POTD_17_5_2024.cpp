@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 17/05/2024
+// Find Pair Given Difference
+
 #include <bits/stdc++.h>
 using namespace std;
 
