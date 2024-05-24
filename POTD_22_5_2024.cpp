@@ -1,14 +1,48 @@
 #include <bits/stdc++.h>
 using namespace std;
 
+// } Driver Code Ends
 class Solution
 {
 public:
     double findSmallestMaxDist(vector<int> &stations, int k)
     {
+        int n = stations.size();
+        double low = 0.0;
+        double high = stations[n - 1] - stations[0];
+        const double eps = 1e-6;
+
+        auto feasible = [&](double d) -> bool
+        {
+            int count = 0;
+            for (int i = 1; i < n; ++i)
+            {
+                int requiredStations = static_cast<int>((stations[i] - stations[i - 1]) / d);
+                count += requiredStations;
+                if (count > k)
+                    return false;
+            }
+            return true;
+        };
+
+        while (high - low > eps)
+        {
+            double mid = (low + high) / 2.0;
+            if (feasible(mid))
+            {
+                high = mid;
+            }
+            else
+            {
+                low = mid;
+            }
+        }
+
+        return round(high * 100.0) / 100.0;
     }
 };
 
+//{ Driver Code Starts.
 int main()
 {
     int t;
