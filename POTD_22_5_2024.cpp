@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 22/05/2024
+// Minimize Max Distance to Gas Station
+
 #include <bits/stdc++.h>
 using namespace std;
 
