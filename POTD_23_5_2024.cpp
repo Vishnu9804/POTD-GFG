@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 23/05/2024
+// K-Palindrome
+
 #include <bits/stdc++.h>
 using namespace std;
 
