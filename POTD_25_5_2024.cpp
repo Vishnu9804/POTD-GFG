@@ -8,6 +8,22 @@ class Solution
 public:
     long long max_Books(int arr[], int n, int k)
     {
+        long long max_books = 0;
+        long long current_books = 0;
+
+        for (int i = 0; i < n; ++i)
+        {
+            if (arr[i] <= k)
+            {
+                current_books += arr[i];
+                max_books = max(max_books, current_books);
+            }
+            else
+            {
+                current_books = 0;
+            }
+        }
+        return max_books;
     }
 };
 
