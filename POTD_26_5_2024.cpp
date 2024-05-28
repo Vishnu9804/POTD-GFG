@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 26/05/2024
+// Minimum Cost To Make Two Strings Identical
+
 #include <bits/stdc++.h>
 using namespace std;
 
