@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 28/05/2024
+// Minimum cost to fill given weight in a bag
+
 #include <bits/stdc++.h>
 using namespace std;
 
