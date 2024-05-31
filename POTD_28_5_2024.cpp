@@ -29,6 +29,21 @@ class Solution
 public:
     int minimumCost(int n, int w, vector<int> &cost)
     {
+        vector<int> dp(w + 1, INT_MAX);
+        dp[0] = 0;
+
+        for (int j = 1; j <= w; ++j)
+        {
+            for (int i = 1; i <= n; ++i)
+            {
+                if (i <= j && cost[i - 1] != -1 && dp[j - i] != INT_MAX)
+                {
+                    dp[j] = min(dp[j], dp[j - i] + cost[i - 1]);
+                }
+            }
+        }
+
+        return dp[w] == INT_MAX ? -1 : dp[w];
     }
 };
 
