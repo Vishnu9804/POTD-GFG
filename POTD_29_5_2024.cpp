@@ -6,6 +6,19 @@ class Solution
 public:
     int findWinner(int n, int x, int y)
     {
+        bool dp[n + 1];
+        dp[0] = false;
+        dp[1] = true;
+
+        for (int i = 2; i <= n; i++)
+        {
+            if (i >= x && !dp[i - x] || i >= y && !dp[i - y] || !dp[i - 1])
+                dp[i] = true;
+            else
+                dp[i] = false;
+        }
+
+        return dp[n];
     }
 };
 
