@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 29/05/2024
+// Geek and its Game of Coins
+
 #include <bits/stdc++.h>
 using namespace std;
 
