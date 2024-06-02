@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 30/05/2024
+// String Subsequence
+
 #include <bits/stdc++.h>
 using namespace std;
 
