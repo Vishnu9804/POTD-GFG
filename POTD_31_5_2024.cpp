@@ -6,6 +6,9 @@ class Solution
 public:
     int swapNibbles(int n)
     {
+        int leftNibble = (n & 0xF0) >> 4;
+        int rightNibble = (n & 0x0F) << 4;
+        return (rightNibble | leftNibble);
     }
 };
 
