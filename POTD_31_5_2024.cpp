@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 31/05/2024
+// Swap two nibbles in a byte
+
 #include <bits/stdc++.h>
 using namespace std;
 
