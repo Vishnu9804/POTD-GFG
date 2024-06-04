@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 01/06/2024
+// Odd Even Problem
+
 #include <bits/stdc++.h>
 using namespace std;
 
