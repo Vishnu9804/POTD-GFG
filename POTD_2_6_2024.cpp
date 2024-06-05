@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 02/06/2024
+// Construct list using given q XOR queries
+
 #include <bits/stdc++.h>
 using namespace std;
 
