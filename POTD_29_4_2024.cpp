@@ -5,7 +5,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <iostream>
-using namespace std;
+
+using namespace 
+
+//#include <vector>
+//#include <algorithm>
+//#include <string>
+//#include <sstream>
+//#include <queue>
+//#include <map>
+
 struct Node
 {
     int data;
