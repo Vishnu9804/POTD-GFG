@@ -5,7 +5,14 @@
 #include <vector>
 #include <algorithm>
 
-using namespace std;
+using namespace 
+
+//#include <stdio.h>
+//#include <stdlib.h>
+//#include <string>
+//#include <sstream>
+//#include <queue>
+//#include <map>
 
 struct Node
 {
