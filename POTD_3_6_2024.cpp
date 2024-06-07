@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 03/06/2024
+// Trail of ones
+
 #include <bits/stdc++.h>
 using namespace std;
 
