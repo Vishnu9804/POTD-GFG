@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 13/06/2024
+// Number of Good Components
+
 #include <bits/stdc++.h>
 using namespace std;
 
