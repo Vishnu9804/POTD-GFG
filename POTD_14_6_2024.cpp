@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 14/06/2024
+// Armstrong Numbers
+
 #include <bits/stdc++.h>
 using namespace std;
 
