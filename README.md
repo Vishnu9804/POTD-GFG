@@ -1,4 +1,4 @@
-# GeeksforGeeks Problem of the Day (POTD)
+# GeeksforGeeks Problem of the Day
 
 Welcome to the **GeeksforGeeks Problem of the Day** repository! This repository is updated daily with the Problem of the Day from GeeksforGeeks along with solutions.
 
