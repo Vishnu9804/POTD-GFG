@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 16/06/2024
+// Prime Pair with Target Sum
+
 #include <bits/stdc++.h>
 using namespace std;
 
