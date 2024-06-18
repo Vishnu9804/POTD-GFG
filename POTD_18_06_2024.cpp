@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 18/06/2024
+// Number of Rectangles in a Circle
+
 #include <bits/stdc++.h>
 using namespace std;
 
