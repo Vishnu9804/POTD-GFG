@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 17/06/2024
+// Check If two Line segments Intersect
+
 #include <bits/stdc++.h>
 using namespace std;
 
