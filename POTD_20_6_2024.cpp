@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 20/05/2024
+// Integral Points Inside Triangle
+
 #include <bits/stdc++.h>
 using namespace std;
 
