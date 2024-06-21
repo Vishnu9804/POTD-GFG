@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 21/06/2024
+// Compare two fractions
+
 #include <iostream>
 #include <regex>
 using namespace std;
