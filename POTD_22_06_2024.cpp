@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 22/06/2024
+// Extract the Number from the String
+
 #include <bits/stdc++.h>
 using namespace std;
 
