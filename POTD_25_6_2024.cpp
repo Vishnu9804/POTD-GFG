@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 25/06/2024
+// Left Rotate Matrix K times
+
 #include <bits/stdc++.h>
 using namespace std;
 
