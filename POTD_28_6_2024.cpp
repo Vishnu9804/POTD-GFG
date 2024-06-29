@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 28/06/2024
+// The Palindrome Pattern
+
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 using namespace std;
