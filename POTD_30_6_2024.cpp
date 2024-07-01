@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 30/06/2024
+// Delete node in Doubly Linked List
+
 //{ Driver Code Starts
 #include <stdio.h>
 #include <stdlib.h>
