@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 1/07/2024
+// Linkedlist from tree
+
 //{ Driver Code Starts
 #include <bits/stdc++.h>
 
