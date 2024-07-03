@@ -1,5 +1,5 @@
-//{ Driver Code Starts
-// Code by Shubham Joshi
+// POTD geeksforgeeks 2/07/2024
+// Linked list of strings forms a palindrome
 #include <bits/stdc++.h>
 using namespace std;
 
