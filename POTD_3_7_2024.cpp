@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 3/07/2024
+// Remove all occurences of duplicates in a   linked list
+
 //{ Driver Code Starts
 // Initial Template for C++
 
