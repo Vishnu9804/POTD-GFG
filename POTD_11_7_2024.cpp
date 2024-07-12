@@ -1,3 +1,6 @@
+// POTD geeksforgeeks 11/07/2024
+// Maximum Connected group
+
 //{ Driver Code Starts
 // Initial Template for C++
 
